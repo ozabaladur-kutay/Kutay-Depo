@@ -1,0 +1,132 @@
+/* Temel Sıfırlamalar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Koyu Mavi Arka Plan (KutOS teması) */
+    color: #ffffff; /* Beyaz Yazı Rengi */
+    line-height: 1.6;
+}
+
+/* Başlık (Header) ve Navigasyon Çubuğu */
+header {
+    background-color: #0f0f1b; /* Çok Koyu Başlık Çubuğu */
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Hafif gölge */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8cfffa; /* Açık Mavi/Turkuaz Vurgu */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8cfffa; /* Üzerine gelince renk değiştirme */
+}
+
+/* Ana Bölüm (Hero) */
+.hero {
+    text-align: center;
+    padding: 100px 5%;
+    background-color: #1a1a2e;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #8cfffa; /* Başlığı KutOS rengi yap */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #cccccc;
+}
+
+.btn-primary {
+    background-color: #4b0082; /* Kutos Temasına Uygun Mor Buton */
+    color: #ffffff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5d1796;
+}
+
+/* Alt Bilgi (Footer) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f0f1b;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+/* Ekran Görüntüsü Alanı */
+.image-area {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.desktop-img {
+    width: 80%; /* Resmin genişliğini ekranın %80'i yap */
+    max-width: 1000px; /* Çok büyük ekranlarda aşırı büyümesini engelle */
+    height: auto;
+    border: 5px solid #4b0082; /* KutOS morunda çerçeve ekle */
+    border-radius: 15px; /* Köşeleri yuvarla */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Derin bir gölge ekle */
+}
+
+/* Neden KutOS Özellik Bölümü (Kartlar) */
+.features {
+    text-align: center;
+    padding: 80px 5%;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #8cfffa; /* Başlık rengi KutOS vurgusu */
+}
+
+.feature-container {
+    display: flex; /* Kartları yan yana dizer */
+    gap: 20px; /* Kartlar arasına boşluk koyar */
+    justify-content: center; /* Kartları ortalar */
+}
+
+.feature-card {
+    background-color: #0f0f1b; /* Çok Koyu arka plan */
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1; /* Kartların eşit genişlikte olmasını sağlar */
+    max-width: 350px;
+    border: 1px solid #4b0082; /* Mor Kenarlık */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Fare gelince hafifçe yukarı kaydırır */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.feature-card h3 {
+    color: #8cfffa;
+    margin-top: 0;
+}
